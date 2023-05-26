@@ -60,13 +60,14 @@ ul{
     margin-top: 30px;
     margin-bottom: 20px;
     background-color: #FA8072;
-    padding: 20px 0 20px 0
+    padding: 20px 0 20px 0;
+    
 }
-
 
 .cancion{
     transition:all .7s ease;
     width:100%;
+    
 }
 .cancion:hover{
     transform:scale(1.07);
@@ -79,6 +80,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 /*****************************************/
 .discoAlbum{
