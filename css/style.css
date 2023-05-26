@@ -1,0 +1,119 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-size: 1.6rem ;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/*---------------HEADER---------------------*/
+/*Menu*/
+.menu{
+    display: flex;
+    align-items: center;
+}
+.fraseheader{
+    color: white;
+    font-size: 25px;
+    padding-left: 60px;
+}
+.opciones li a{
+    color: white;
+    font-size: 1.8rem; /** 1.8REM = 28.8px**/
+}
+.opciones li a:hover {
+    color: #FA8072;
+    text-decoration: underline;
+}
+.logo{
+    width: 200px;
+}
+.encabezado{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*-------------------------FIN DE HEADER-----------------------*/
+/*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
+.info{
+    font-size: 30px;
+    color: black;
+    line-height: normal;
+}
+.titulos{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #FA8072;
+    padding: 20px 0 20px 0
+}
+
+
+.cancion{
+    transition:all .7s ease;
+    width:100%;
+}
+.cancion:hover{
+    transform:scale(1.07);
+    background-color: #FA8072;
+}
+.cancion{
+    width:15%;
+}
+.canciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*****************************************/
+.discoAlbum{
+    transition: all .7s ease;
+    width:100%;
+}
+.discoAlbum:hover{
+    transform:scale(1.07);
+    background-color: #FA8072;
+}
+.discoAlbum{
+    width: 15%;
+}
+.discosalbumes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*********************************************/
+.artista{
+    width:100%;
+    transition: all .7s ease;
+}
+.artista:hover{
+    transform:scale(1.07);
+    background-color: #FA8072;
+}
+.artista{
+    width:15%;
+}
+
+
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
