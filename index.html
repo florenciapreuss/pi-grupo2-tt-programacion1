@@ -8,6 +8,42 @@
     <title>Document</title>
 </head>
 <body>
+    <header id="header">
+        <nav>
+            <section class="sectionLogo">
+                <img id="logo" src="./img/imagenLogo.png.png" alt="Waves Logo">
+            </section>
+
+            <section class="sectionMenuNavegacion">
+                <ul>
+                    <li>
+                        <a class="linknav" href="#header">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="linknav" href="#h2">Canciones</a>
+                    </li>
+                    <li>
+                        <a class="linknav" href="#h2">Discos/Álbumes</a>
+                    </li>
+                    <li>
+                        <a class="linknav" href="#h2">Artistas</a>
+                    </li>
+                    <li>
+                        <a class="linknav" href="#footer">Pie de página</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sectionBusqueda">
+                <form class="form" action="./resultadoBusqueda.html" method="get">
+                    <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
+                    <button class="submitButton" type="submit"> <i></i> </button>
+                </form>
+            </section>
+        </nav>
+
+    </header>
+
     <h2 class="titulos">Canciones</h2>
     <section class="canciones"> </section>
     
@@ -16,7 +52,14 @@
 
     <h2 class="titulos">Artistas</h2>
     <section class="artistas"></section>
-    
+
+    <footer id="footer">
+        <ul>
+            <li>Antonella Castellani | <a href="3874143718" class="contacto"> 3874143718 </a></li>
+            <li>Valentina Quispe | <a href="3874143718" class="contacto"> 3874143718 </a></li>
+            <li>Florenica Preuss | <a href="3874143718" class="contacto"> 3874143718 </a></li>
+        </ul>
+    </footer>
 
 <script src="./archivosJs/index.js"></script>
 </body>
