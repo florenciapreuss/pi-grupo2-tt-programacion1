@@ -67,6 +67,15 @@ ul{
     width: 500px;
     border: solid 3px #FA8072 ;
 }
+.submitButton{
+    border: 0px;
+}
+.lupaBusqueda{
+    height: 35px;
+    width: 35px;
+    border: solid 3px #FA8072 ;
+}
+
 /* Footer: */
 .itemFooter{
     padding: 4px;
