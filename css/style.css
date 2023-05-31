@@ -40,8 +40,9 @@ ul{
     color: #FA8072;
     text-decoration: underline;
 }
-.logo{
-    width: 200px;
+#logo{
+    width: 50px;
+    display: flex;
 }
 .encabezado{
     background-color: black;
