@@ -22,32 +22,73 @@ ul{
     list-style-type: none;
 }
 /*---------------HEADER---------------------*/
-/*Menu*/
-.menu{
+#logo{
+    width: 120px;
+    border-radius: 200px;
+    margin: 10px;
+    border: solid 3px #FA8072
+}
+.sectionLogo{
     display: flex;
+    justify-content: center;
+}
+.linknav {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;  
+    display: block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
     align-items: center;
+    padding: 14px 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: solid 3px #FA8072;
 }
-.fraseheader{
-    color: white;
-    font-size: 25px;
-    padding-left: 60px;
+a{
+    text-decoration: none;
+    color: black;
 }
-.opciones li a{
-    color: white;
-    font-size: 1.8rem; /** 1.8REM = 28.8px**/
+ul{
+    list-style-type: none; 
+    display: flex;  
+    justify-content: space-around; 
+    word-wrap: none; 
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 .opciones li a:hover {
     color: #FA8072;
     text-decoration: underline;
 }
-#logo{
-    width: 50px;
-    display: flex;
+.logo{
+    width: 200px;
 }
 .encabezado{
     background-color: black;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.busqueda{
+    margin-top: 30px;
+    height: 50px;
+    width: 500px;
+    border: solid 3px #FA8072 ;
+}
+.submitButton{
+    border: 0px;
+}
+.lupaBusqueda{
+    height: 35px;
+    width: 35px;
+    border: solid 3px #FA8072 ;
+}
+
+/* Footer: */
+.itemFooter{
+    padding: 4px;
+    border: solid 3px #FA8072;
+    margin: 10px;
 }
 /*-------------------------FIN DE HEADER-----------------------*/
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
