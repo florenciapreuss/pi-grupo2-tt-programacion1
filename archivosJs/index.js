@@ -1,3 +1,5 @@
+
+//Listado canciones 
 let canciones= document.querySelector(".canciones");
 fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks") 
 .then(response => {
@@ -28,7 +30,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
 })
 .catch(error=>console.log(error))
 
-//ahora artistas
+
 
 //Listado artistas
 let artistas=document.querySelector(".artistas");
