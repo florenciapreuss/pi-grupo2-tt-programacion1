@@ -67,7 +67,7 @@ form.addEventListener('submit', function(e) {
 
    if (input.value.length >= 3) {
       form.submit();
-   } else if (0 < input.value.length < 3) {
+   } else if (0 < input.value.length && input.value.length < 3) {
     alert("Debes escribir por lo menos tres caracteres");
    } else {
        alert("El campo de búsqueda está vacío");
