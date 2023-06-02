@@ -1,3 +1,5 @@
+
+//Listado canciones 
 let canciones= document.querySelector(".canciones");
 fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks") 
 .then(function (response) {
@@ -36,7 +38,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
   })
 
 
-//ahora artistas
+
 
 //Listado artistas
 let artistas=document.querySelector(".artistas");
@@ -55,30 +57,22 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
   
   })
 
-/* Búsqueda: */
-/* function validarBusqueda() {
-    let valor=document.forms["sectionBusqueda"]["form"].value;
-    let span=document.body.querySelector("form span[name='mensajeError']")
-    console.log(span);
-    if (valor==""){
-        span.innerHTML="¡El campo de búsqueda está vacío!";
-        return false;
-    }else if (valor<3){
-        span.innerHTML="¡Debes colocar al menos 3 letras!";
-        return false;
-    }else return true;
-} */
+/* Cantidad de letras en busqueda: */
+let form = document.querySelector('.form');
+let input = document.querySelector('.busqueda');
 
-let cantidadDeLetras=busqueda.lenght()
-let buscador=document.querySelector("submitButton");
-buscador.addEventListener('submit', function(e){
-    if (cantidadDeLetras == 0) {
-        let advertencia="El campo de búsqueda está vacío";
-        alert(advertencia)
-    }else if (cantidadDeLetras < 3) {
-        let segundaAdvertencia="Debe colocar al menos 3 letras";
-        alert(segundaAdvertencia)
-    } else {
-        return true;
-    }
-})
+form.addEventListener('submit', function(e) {
+   e.preventDefault()
+
+
+   if (input.value.length >= 3) {
+      form.submit();
+   } else if (0 < input.value.length < 3) {
+    alert("Debes escribir por lo menos tres caracteres");
+   } else {
+       alert("El campo de búsqueda está vacío");
+   }
+});
+
+
+
