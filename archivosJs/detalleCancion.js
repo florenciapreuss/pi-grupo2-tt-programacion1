@@ -1,6 +1,6 @@
 // Obtener el ID de la canción de la URL
-let urlParams = new URLSearchParams(location.search);
-let cancionId = urlParams.get('id');
+let cancion = new URLSearchParams(location.search);
+let cancionId = cancion.get('id');
 
 // Obtener los detalles de la canción mediante la API
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancionId}`)
@@ -9,19 +9,19 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancio
     })
 
     .then(function (data){
-        let detalleCancion = document.getElementById('detalleCancion');
+        let tituloCancion = document.querySelector(".titulo");
+        let artista = document.querySelector(".artista");
+        let album = document.querySelector(".album");
+        let imagen = document.querySelector(".imagen");
+        let audio = document.querySelector(".audio");
+        
 
-        // Crear el contenido HTML con los detalles de la canción
-        let html = `
-            <h2>${data.title}</h2>
-            <p>Artista: ${data.artist.name}</p>
-            <p>Álbum: ${data.album.title}</p>
-            <img src="${data.album.cover_big}" alt="${data.album.title} Cover">
-            <audio controls src="${data.preview}"></audio>
-        `;
-
-        // Agregar el contenido HTML al elemento detalleCancion
-        detalleCancion.innerHTML = html;
+        tituloCancion.innerText = data.title;
+        artista.innerText = data.artist.name;
+        album.innerText = data.album.title;
+        imagen.src = data.album.cover_big;
+        imagen.alt = data.album.title;
+        audio.src = data.preview;
     })
     .catch(function(error) {
 
