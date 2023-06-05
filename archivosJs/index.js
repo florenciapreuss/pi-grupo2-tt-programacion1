@@ -48,7 +48,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
 })
 .then(function(dataArtista){
     for(let i =0;i<5;i++){
-        artistas.innerHTML += `<article class="artista"><a href="detalleartista.html?id=${dataArtista.data[i].id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h2>${dataArtista.data[i].name}</h2> </article>`
+        artistas.innerHTML += `<article class="artista"><a href="detalleArtistas.html?id=${dataArtista.data[i].id}"> <img src=${dataArtista.data[i].picture_big}> </a> <h2>${dataArtista.data[i].name}</h2> </article>`
     }    
 })
 .catch(function(error) {

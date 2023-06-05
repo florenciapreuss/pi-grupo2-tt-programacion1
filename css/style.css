@@ -162,6 +162,49 @@ ul{
     margin-bottom: 50px;
 }
 
+/* detalle cancion */
+/**Detalle de las canciones**/
+.imgdetalles{
+    width: 60%;
+    /*margin-left: 20%;*/
+}
+.video{
+    width: 100%;
+}
+.infodetalles{
+    font-size: 18px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+/**Detalle de los albumes**/
+.detallesalbum{
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+/* Seguimoss Playlist java script valita */
+
+.imgplaylist{
+    width: 20%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.resultadoPlaylist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* detalle cancion modifique vali */
+#detalleCancion{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
 /* Géneros: */
 
 .imagenGenero{

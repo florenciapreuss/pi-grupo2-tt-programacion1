@@ -1,16 +1,27 @@
-/* Cantidad de letras en busqueda: */
-let form = document.querySelector('.form');
-let input = document.querySelector('.busqueda');
+// Obtener el ID del artista de la URL
+let artista = new URLSearchParams(location.search);
+let artistaId = artista.get('id');
 
-form.addEventListener('submit', function(e) {
-   e.preventDefault()
+// Obtener los detalles de la canción mediante la API
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artistaId}`)
+.then(function (response) {
+    return response.json()
+    })
 
+    .then(function (data){
+        let tituloCancion = document.querySelector(".titulo");
+        let artista = document.querySelector(".artista");
+        let numAlbum = document.querySelector(".numAlbum");
+        let imagen = document.querySelector(".imagen");
+        
 
-   if (input.value.length >= 3) {
-      form.submit();
-   } else if (0 < input.value.length < 3) {
-    alert("Debes escribir por lo menos tres caracteres");
-   } else {
-       alert("El campo de búsqueda está vacío");
-   }
-});
+        tituloCancion.innerText = data.name;
+        artista.innerText = data.name;
+        numAlbum.innerText = data.nb_album;
+        imagen.src = data.picture_medium;
+    })
+    .catch(function(error) {
+
+        console.log("Error: " + error);
+      
+    })
