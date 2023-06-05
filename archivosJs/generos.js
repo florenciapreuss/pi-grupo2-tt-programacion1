@@ -6,7 +6,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
 })
 .then(function(data){
     for(let i=1;i<28;i++){
-        ListaGeneros.innerHTML+= `<article class="genero"> 
+        ListaGeneros.innerHTML+= `<article class="genero"><a href="detalleGeneros.html?id=${data.data[i].id}"> 
         <img src =${data.data[i].picture_medium} class="imagenGenero"> </a> <h2 class="tituloGenero"> ${data.data[i].name} </h2>
         </article>`
         
