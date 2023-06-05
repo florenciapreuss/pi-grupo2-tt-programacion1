@@ -17,6 +17,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
     console.log(error);
 })
 
+
+
 /* Cantidad de letras en busqueda: */
 let form = document.querySelector('.form');
 let input = document.querySelector('.busqueda');
