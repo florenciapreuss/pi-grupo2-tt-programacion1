@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Obtener el ID del album de la URL
 let album = new URLSearchParams(location.search);
 let albumId = album.get('id');
@@ -25,7 +24,6 @@ fetch(` https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${album
         console.log("Error: " + error);
       
       })
-=======
 /* Cantidad de letras en busqueda: */
 let form = document.querySelector('.form');
 let input = document.querySelector('.busqueda');
@@ -42,4 +40,3 @@ form.addEventListener('submit', function(e) {
        alert("El campo de búsqueda está vacío");
    }
 });
->>>>>>> ab81434058ddf7aa4ba200c4ef5906076a9c3d50
