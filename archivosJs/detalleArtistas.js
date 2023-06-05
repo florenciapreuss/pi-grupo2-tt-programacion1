@@ -18,7 +18,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artis
         tituloCancion.innerText = data.name;
         artista.innerText = data.name;
         numAlbum.innerText = data.nb_album;
-        imagen.src = data.picture;
+        imagen.src = data.picture_medium;
     })
     .catch(function(error) {
 
