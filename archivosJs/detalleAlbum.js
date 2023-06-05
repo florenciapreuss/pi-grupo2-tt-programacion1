@@ -12,7 +12,7 @@ fetch(` https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${album
         let tituloAlbum = document.querySelector(".titulo");
         let artista = document.querySelector(".artista");
         let imagen = document.querySelector(".imagen");
-        let release = document.querySelector(".release")
+        let release = document.querySelector(".releaseDate")
 
         tituloAlbum.innerText = data.title;
         artista.innerText = data.artist.name;
@@ -24,6 +24,7 @@ fetch(` https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${album
         console.log("Error: " + error);
       
       })
+
 /* Cantidad de letras en busqueda: */
 let form = document.querySelector('.form');
 let input = document.querySelector('.busqueda');
