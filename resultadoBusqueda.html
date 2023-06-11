@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header id="header">
         <section class="sectionLogo">
@@ -25,7 +27,7 @@
         </section>
 
         <section class="sectionBusqueda">
-            <form class="form" action="./resultadoBusqueda.html" method="get">
+            <form class="form" id="formId" action="./resultadoBusqueda.html" method="get">
                 <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
                 <button class="submitButton" type="submit"> <img class="lupaBusqueda" src="./img/lupa.png"
                         alt="Lupa de búsqueda"> </button>
@@ -34,6 +36,18 @@
 
     </header>
 
+    <h1 class="resultBusqueda"></h1>
+
+    <h2>Canciones encontradas: </h2>
+    <section class="resultBusquedaCanciones"> </section>
+
+    <h2>Albums encontrados: </h2>
+    <section class="resultBusquedaAlbums"> </section>
+
+    <h2>Artistas encontrados: </h2>
+    <section class="resultBusquedaArtistas"> </section>
+
+
     <footer id="footer">
         <ul>
             <li>Antonella Castellani | <a href="3874143718" class="contacto"> 3874143718 </a></li>
@@ -41,6 +55,8 @@
             <li>Florencia Preuss | <a href="3874143718" class="contacto"> 3874143718 </a></li>
         </ul>
     </footer>
-    
+
+    <script src="./archivosJs/resultadoBusqueda.js"></script>
 </body>
+
 </html>

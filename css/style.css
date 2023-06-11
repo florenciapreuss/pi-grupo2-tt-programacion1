@@ -13,10 +13,10 @@ body{
     line-height: 2rem;
     
 }
-img{
-    width: 100%;
-}
 
+.indexImagen{
+    width: 100%;
+} 
 /*---------------HEADER---------------------*/
 #logo{
     width: 120px;
@@ -208,4 +208,8 @@ ul{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: row;
+}
+
+.resultImagen{
+    width: 30%;
 }
