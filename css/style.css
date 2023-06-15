@@ -215,3 +215,8 @@ ul{
     flex-wrap: wrap;
     align-items: row;
 }
+
+.infodetallescancion{
+    width: 20%;
+
+}
