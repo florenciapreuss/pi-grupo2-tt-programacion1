@@ -9,46 +9,29 @@
 </head>
 <body>
     <header id="header">
-        <nav>
-            <section class="sectionLogo">
-                <img id="logo" src="./img/imagenLogo.png.png" alt="Waves Logo">
-            </section>
+        <section class="sectionLogo">
+            <img id="logo" src="./img/imagenLogo.png.png" alt="Waves Logo">
+        </section>
 
-            <section class="sectionMenuNavegacion">
-                <ul>
-                    <li>
-                        <a class="linknav" href="#header">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linknav" href="#h2">Canciones</a>
-                    </li>
-                    <li>
-                        <a class="linknav" href="#h2">Discos/Álbumes</a>
-                    </li>
-                    <li>
-                        <a class="linknav" href="#h2">Artistas</a>
-                    </li>
-                    <li>
-                        <a class="linknav" href="./generos.html">Géneros</a>
-                    </li>
-                </ul>
-            </section>
+        <section class="sectionMenuNavegacion">
+            <ul>
+                <li><a class="linknav" href="./index.html">Inicio</a></li>
+                <li><a class="linknav" href="./playlist.html">Mi Playlist</a></li>
+                <li> <a class="linknav" href="#discosalbumes">Discos/Álbumes</a></li>
+                <li><a class="linknav" href="#artistas">Artistas</a></li>
+                <li><a class="linknav" href="#canciones">Canciones</a></li>
+                <li><a class="linknav" href="./generos.html">Géneros</a></li>
+            </ul>
+        </section>
 
-            <section class="sectionBusqueda">
-                <form class="form" action="./resultadoBusqueda.html" method="get">
-                    <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
-                    <button class="submitButton" type="submit"> <img class="lupaBusqueda" src="./img/lupa.png" alt="Lupa de búsqueda"> </button>
-                </form>
-            </section>
-        </nav>
-
+        <section class="sectionBusqueda">
+            <form class="form" id="formId" action="./resultadoBusqueda.html" method="get">
+                <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
+                <button class="submitButton" type="submit"> <img class="lupaBusqueda" src="./img/lupa.png" alt="Lupa de búsqueda"> </button>
+            </form>
+        </section>
     </header>
 
-    <br>
-    <h1>Detalles de la Canción</h1>
-    <br>
-    <div id="detalleCancion"></div>
-    <br>
     <section>
         <article>
             <a class="links" id="agregarQuitar" href="#">Agregar a mi playlist</a>
@@ -57,6 +40,7 @@
             <a class="links" href="playlist.html">Ir a mi playlist</a>
         </article>
     </section>
+<<<<<<< HEAD
     <section class="infodetallescancion">
         
     </section>
@@ -69,6 +53,18 @@
     <audio controls src="" class="audio"></audio>
     
     <br>
+=======
+   
+   <article class="detalle detCancion">
+        <h1 class="cancionTitle detCancion"></h1>
+        <h2 class="artist detCancion"></h2>
+        <h3 class="album detCancion"></h3>
+        <img src="" alt="" class="image detCancion">
+        <audio controls src="" class="audio detCancion"></audio>
+    </article>
+
+
+>>>>>>> 73856e284479d12a8d9fd2d506a500e516c672ea
     <footer id="footer">
         <ul>
             <li>Antonella Castellani </li>

@@ -1,35 +1,49 @@
-// Obtener el ID de la canción de la URL
-let urlParams = new URLSearchParams(location.search);
-let cancionId = urlParams.get('id');
-let id =  urlParams.get('id');
+// HEADER 
+// Para que el formulario solo haga la busqueda cuando se ingresan mas de 3 letras
+let form  = document.querySelector('.form');
+let input = document.querySelector('.busqueda');
 
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
 
-// Obtener los detalles de la canción mediante la API
+    if (input.value.length >= 3) {
+        form.submit();
+    } 
+    else if (0 < input.value.length && input.value.length < 3) {
+        alert("Debes escribir por lo menos tres caracteres");
+    } 
+    else {
+        alert("El campo de búsqueda está vacío");
+    }
+});
+
+//DETALLE CANCION
+// Para obtener el ID de la canción de la URL
+let cancionQS = new URLSearchParams(location.search);
+let cancionId = cancionQS.get('id');
+
+// Obtener los detalles de la canción con la API
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancionId}`)
-.then(function (response) {
-    return response.json()
+    .then(function (response) {
+        return response.json()
     })
-
     .then(function (data){
-        let tituloCancion = document.querySelector(".titulo");
-        let artista = document.querySelector(".artista");
-        let album = document.querySelector(".album");
-        let imagen = document.querySelector(".imagen");
-        let audio = document.querySelector(".audio");
-        
+        let cancionTitle = document.querySelector(".cancionTitle");
+        let artist       = document.querySelector(".artist");
+        let album        = document.querySelector(".album");
+        let image        = document.querySelector(".image");
+        let audio        = document.querySelector(".audio");
 
-        tituloCancion.innerText = data.title;
-        artista.innerText = data.artist.name;
-        album.innerText = data.album.title;
-        imagen.src = data.album.cover_big;
-        imagen.alt = data.album.title;
-        audio.src = data.preview;
+        cancionTitle.innerText = data.title;
+        artist.innerText       = data.artist.name;
+        album.innerText        = data.album.title;
+        image.src              = data.album.cover_medium;
+        image.alt              = data.album.title;
+        audio.src              = data.preview;
     })
     .catch(function(error) {
-
         console.log("Error: " + error);
-      
-      })
+    })
 
 
 //Trabajo Local Storage -- Gonchy

@@ -11,26 +11,22 @@ body{
     font-size: 1.6rem ;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
+    
 }
-img{
+
+.indexImagen{
     width: 100%;
-}
-a{
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-}
+} 
 /*---------------HEADER---------------------*/
 #logo{
     width: 120px;
     border-radius: 200px;
     margin: 10px;
-    border: solid 3px #474B4E
 }
 .sectionLogo{
     display: flex;
     justify-content: center;
+    width: 30%;
 }
 .linknav {
     box-sizing: border-box;
@@ -57,23 +53,12 @@ ul{
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
 }
-.opciones li a:hover {
-    color: #474B4E;
-    text-decoration: underline;
-}
-.logo{
-    width: 200px;
-}
-.encabezado{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
+
 .busqueda{
-    margin-top: 30px;
+    margin: 20px;
     height: 50px;
     width: 500px;
-    border: solid 3px #474B4E ;
+
 }
 .submitButton{
     border: 0px;
@@ -83,12 +68,21 @@ ul{
     width: 35px;
     border: solid 3px #474B4E;
 }
+.sectionBusqueda{
+    display: flex;
+    width: 70%;
+}
+.encabezado{
+    display: flex;
+}
 
 /* Footer: */
 .itemFooter{
     padding: 4px;
     border: solid 3px #474B4E;
     margin: 10px;
+    display: flex;
+
 }
 /*-------------------------FIN DE HEADER-----------------------*/
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
@@ -129,7 +123,7 @@ ul{
     transition: all .7s ease;
     width:100%;
 }
-.discoAlbum:hover{
+ .discoAlbum:hover{
     transform:scale(1.07);
     background-color: #474B4E;
 }
@@ -207,16 +201,11 @@ ul{
 }
 /* Géneros: */
 
-.imagenGenero{
+.image{
     height: 300px;
     width: 300px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: row;
-}
-
-.infodetallescancion{
-    width: 20%;
-
 }
