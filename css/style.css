@@ -93,7 +93,7 @@ ul {
 
 /* funcionalidad electiva */
 /* Estilos para el modo claro */
-body.light-mode {
+    body.light-mode {
     background-color: white;
     color: black;
 }
@@ -101,7 +101,7 @@ body.light-mode {
 /* Estilos para el modo oscuro */
 body.dark-mode {
     background-color: black;
-    color: white;
+    color:white;
 }
 
 /* Estilos para la imagen del modo oscuro*/
@@ -374,6 +374,13 @@ body.dark-mode {
 
 
 /*---------------GENEROS.HTML--------------------*/
+.tituloGeneros{
+    font-size: 35px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
 
 .image {
     height: 300px;
@@ -382,7 +389,28 @@ body.dark-mode {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: row;
+    padding: 5px;
+    margin: 5px;
 }
+
+.ListaGeneros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: row;
+}
+
+.title.genero{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#generos a{
+    text-decoration: none;
+}
+
 
 /*---------------FIN GENEROS.HTML--------------------*/
 
