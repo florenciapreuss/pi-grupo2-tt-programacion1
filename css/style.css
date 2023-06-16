@@ -90,7 +90,6 @@ ul {
     justify-content: space-between;
     padding-bottom: 20px;
 }
-
 /*-------------------------FIN DE HEADER-----------------------*/
 
 
@@ -189,7 +188,6 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* Nueva propiedad agregada */
 }
 
 .links {
@@ -247,18 +245,122 @@ ul {
 
 
 /*---------------DETALLEALBUM.HTML--------------------*/
-.detallesalbum {
-    flex-direction: column;
-    margin-right: 5%;
-    padding: 40px;
-}
-
-.listTracks {
+#detalleAlbum {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .title.detAlbum {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .artist.detAlbum {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .releaseDate.detAlbum {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .image.detAlbum {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .genre {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .listTracks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
-}
+  }
+  
+  .listTracks li {
+    margin-bottom: 5px;
+    list-style-type: square;
+  }  
 
 /*---------------FIN DETALLEALBUM.HTML--------------------*/
+
+
+/*---------------DETALLEARTISTAS.HTML--------------------*/
+.detalle.detArtista {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .title.detArtista {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .nb_album.detArtista {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .image.detArtista {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .listAlbums {
+    font-size: 16px;
+  }
+  
+  .listAlbums p {
+    margin-bottom: 5px;
+  }
+  
+  .listAlbums ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .listAlbums li {
+    margin-bottom: 5px;
+  }
+  
+  .lista_albumes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .nombre_artista a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nombre_artista a:hover {
+    text-decoration: underline;
+  }
+/*---------------FIN DETALLEARTISTAS.HTML--------------------*/
+
+
 
 /*---------------GENEROS.HTML--------------------*/
 

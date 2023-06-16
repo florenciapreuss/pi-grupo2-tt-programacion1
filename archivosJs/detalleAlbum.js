@@ -37,13 +37,13 @@ fetch(` https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${album
         let listTracks  = document.querySelector(".listTracks");
 
         albumTitle.innerText  = data.title;
-        artist.innerText      = data.artist.name;
+        artist.innerText      += data.artist.name;
         image.src             = data.cover_medium;
         releaseDate.innerText = data.release_date;
-        genre. innerText      = data. genres.data[0].name;
+        genre. innerText      += data.genres.data[0].name;
         
-        for (let i = 0; i <= 5; i++) {
-            listTracks.innerHTML += `<li class="cancionesAlbum">${data.tracks.data[i].title}</li>`
+        for (let i = 0; i < 5; i++) {
+            listTracks.innerHTML += `<li>${data.tracks.data[i].title}</li>`
         }
     })
     .catch(function (error) {
