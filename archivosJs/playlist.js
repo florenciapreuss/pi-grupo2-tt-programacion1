@@ -19,10 +19,10 @@ form.addEventListener('submit', function (e) {
 
 
 //PLAYLIST
-let cancionesFavoritas = localStorage.getItem('pepito') // Traigo los datos del localStorage con getItem 
+let cancionesFavoritas = localStorage.getItem('atrapar') // Traigo los datos del localStorage con getItem 
 let arrayplaylist = JSON.parse(cancionesFavoritas)  // Los transformo en un array // Parsee cancionesFavoritas
 let imgplaylist = document.querySelector('.imgplaylist')    // Declare la variables imgplaylist para capturar el elemento en donde quiero que se muestren las fotos 
-let tituloplaylist = document.querySelector('.titulovalita')
+let tituloplaylist = document.querySelector('.tplaylist')
 if(arrayplaylist.length == 0){ // Lo que le indique a este bloque fue basicamente que si el array cancionesFavoritas esta vacio, que diga:
     tituloplaylist.innerHTML = 'No agregaste ninguna cancion a tu playlist'
 } else{ // Hice fetch para que muestre lo que el usuario puso en la playlist
