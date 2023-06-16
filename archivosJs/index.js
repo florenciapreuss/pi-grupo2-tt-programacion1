@@ -50,7 +50,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks
             canciones.innerHTML += `<article class="cancion">
             <a href= "detalleCancion.html?id=${dataCancion.data[i].id}"> 
             <img class="indexImagen" src =${dataCancion.data[i].album.cover_medium}></a> 
-            <h2>${dataCancion.data[i].title}</h2>
+            <h2 class= "nombre">${dataCancion.data[i].title}</h2>
             </article>`
         }
     })
@@ -72,7 +72,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums
             albumes.innerHTML += `<article class="discoAlbum">
             <a href="detallealbum.html?id=${dataAlbum.data[i].id}"> 
             <img class="indexImagen" src=${dataAlbum.data[i].cover_medium}></a> 
-            <h2>${dataAlbum.data[i].title}</h2> 
+            <h2 class= "nombre">${dataAlbum.data[i].title}</h2> 
             </article>`
         }
     })
@@ -94,7 +94,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artist
             artistas.innerHTML += `<article class="artista">
             <a href="detalleArtistas.html?id=${dataArtista.data[i].id}"> 
             <img class="indexImagen" src=${dataArtista.data[i].picture_medium}></a> 
-            <h2>${dataArtista.data[i].name}</h2> 
+            <h2 class= "nombre">${dataArtista.data[i].name}</h2> 
             </article>`
         }
     })

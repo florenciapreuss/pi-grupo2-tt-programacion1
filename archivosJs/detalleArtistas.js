@@ -28,8 +28,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artis
         return response.json()
     })
     .then(function (data){
-        let artistTitle  = document.querySelector(".title");
-        let image        = document.querySelector(".image");
+        let artistTitle  = document.querySelector(".titleArtista");
+        let image        = document.querySelector(".imageArtista");
 
         artistTitle.innerText = data.name;
         image.src             = data.picture_medium;
@@ -40,17 +40,16 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artis
             })
             .then(function (data) {
                 let album = data.data
-                let listAlbums = document.querySelector('.listAlbums')
+                let listAlbums = document.querySelector('.listAlbumsArtista')
 
                 for (let i = 0; i < 5; i++) {
                     let fotoAlbm = album[i].cover_medium
                     let nombreAlbm = album[i].title
                     let idAlbm = album[i].id
                     listAlbums.innerHTML += `
-                    <article class="lista_albumes">
-                    <img class="imagen" src="${fotoAlbm}" alt="${nombreAlbm}">
-                    <h3 class="nombre_artista">
-                    <a href="detail-album.html?id=${idAlbm}">${nombreAlbm}</a></h3>
+                    <article class="AlbumArtista">
+                    <img class="imagenArtista" src="${fotoAlbm}" alt="${nombreAlbm}">
+                    <h3 class="nombreAlbumArtista">${nombreAlbm}</h3>
                     </article>`
                 }
             })
