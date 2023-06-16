@@ -29,11 +29,11 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancio
         return response.json()
     })
     .then(function (data){
-        let cancionTitle = document.querySelector(".cancionTitle");
-        let artist       = document.querySelector(".artist");
-        let album        = document.querySelector(".album");
-        let image        = document.querySelector(".image");
-        let audio        = document.querySelector(".audio");
+        let cancionTitle = document.querySelector(".titleCancion");
+        let artist       = document.querySelector(".artistCancion");
+        let album        = document.querySelector(".albumCancion");
+        let image        = document.querySelector(".imageCancion");
+        let audio        = document.querySelector(".audioCancion");
 
 
         cancionTitle.innerText = data.title;

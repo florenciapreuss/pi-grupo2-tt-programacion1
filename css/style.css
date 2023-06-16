@@ -207,35 +207,35 @@ ul {
     background-color: rgb(82, 82, 82);
 }
 
-.detalle {
+.detalleCancion {
     padding: 20px;
     border-radius: 4px;
     margin-bottom: 20px;
 }
 
-.cancionTitle {
+.titleCancion {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.artist {
+.artistCancion {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.album {
+.albumCancion {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.image {
+.imageCancion {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 4px;
 }
 
-.audio {
+.audioCancion {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -251,34 +251,34 @@ ul {
     margin-bottom: 20px;
   }
   
-  .title.detAlbum {
+  .titleAlbum {
     font-size: 30px;
     margin-bottom: 10px;
   }
   
-  .artist.detAlbum {
+  .artistAlbum{
     font-size: 20px;
     margin-bottom: 10px;
   }
   
-  .releaseDate.detAlbum {
+  .releaseDateAlbum {
     font-size: 16px;
     margin-bottom: 10px;
   }
   
-  .image.detAlbum {
+  .imageAlbum{
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 4px;
   }
   
-  .genre {
+  .genreAlbum {
     font-size: 20px;
     margin-bottom: 10px;
   }
   
-  .listTracks {
+  .listTracksAlbum {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -287,7 +287,7 @@ ul {
     flex-direction: column;
   }
   
-  .listTracks li {
+  .listTracksAlbum li {
     margin-bottom: 5px;
     list-style-type: square;
   }  
@@ -325,6 +325,8 @@ ul {
   
   .listAlbums p {
     margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
   }
   
   .listAlbums ul {
@@ -398,7 +400,6 @@ ul {
     border: solid 3px #474B4E;
     margin: 10px;
     display: flex;
-
 }
 
 #footer {
