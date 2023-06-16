@@ -72,18 +72,18 @@ if(miplaylist.includes(cancionId)){
 agregarQuitar.addEventListener('click', function(e){
     e.preventDefault()                                    // si se hace click en el "agregar a mi playlist" (el cual esta dentro de la clase agregarQuitar)
                                                          // le pedimos que agregue el elemento a el array de miplaylist
-    if(miplaylist.includes(id)){
-        let posicionCancion = miplaylist.indexOf(id)
+    if(miplaylist.includes(cancionId)){
+        let posicionCancion = miplaylist.indexOf(cancionId)
         miplaylist.splice(posicionCancion,1)                
         agregarQuitar.innerText = 'Agregar a mi playlist'
     }else{
-        miplaylist.push(id)
+        miplaylist.push(cancionId)
         agregarQuitar.innerText = 'Quitar de mi playlist'
     }
     //cargamos los datos al local storage aplicandole el json.stringify a mi array
     let cadenatexto = JSON.stringify(miplaylist)            // convierte un objeto  texto JSON, opcionalmente reemplaza valores si se indica una función de reemplazo, o si se especifican las propiedades mediante un array de reemplazo.
-    localStorage.setItem('pepito',cadenatexto)
-}) 
+    localStorage.setItem('atrapar',cadenatexto)
+})
 
 
 console.log(miplaylist);
