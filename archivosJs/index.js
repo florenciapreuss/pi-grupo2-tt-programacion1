@@ -17,7 +17,7 @@ form.addEventListener('submit', function (e) {
     }
 });
 
-/*Funcionalidad electiva:*/
+//MODO OSCURO//Funcionalidad electiva://
 // Obtener el botón y el cuerpo del documento
 const modeToggle = document.getElementById('mode-toggle');
 const body = document.body;
@@ -37,6 +37,7 @@ modeToggle.addEventListener('click', () => {
   const mode = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
   localStorage.setItem('mode', mode);
 });
+
 
 //Listado de las 5 canciones 
 let canciones = document.querySelector(".canciones");

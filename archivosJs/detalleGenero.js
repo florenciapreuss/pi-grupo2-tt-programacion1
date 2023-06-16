@@ -18,6 +18,31 @@ form.addEventListener('submit', function (e) {
 });
 
 
+
+
+//MODO OSCURO
+// Obtener el botón y el cuerpo del documento
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+
+// Comprobar el modo actual almacenado en localStorage
+const currentMode = localStorage.getItem('mode');
+if (currentMode) {
+  body.classList.add(currentMode);
+}
+
+// Manejar el cambio de modo cuando se hace clic en el botón
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  body.classList.toggle('dark-mode');
+
+  // Almacenar el modo actual en localStorage
+  const mode = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+  localStorage.setItem('mode', mode);
+});
+
+
+
 //DETALLE GENEROS
 // Para obtener el ID del genero de la URL
 let generoQS = new URLSearchParams(location.search);
@@ -30,8 +55,8 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${genero
     })
     .then(function (data) {
         let detalleGeneros = document.querySelector("#detalleGeneros")
-        detalleGeneros.innerHTML = `<h1 class="title detGenero"> ${data.name} </h1>
-        <img src =${data.picture_medium} class="image detGenero">`
+        detalleGeneros.innerHTML = `<h1 class="titleDetGenero"> ${data.name} </h1>
+        <img src =${data.picture_medium} class="imageDetGenero">`
     })
     .catch(function (error) {
         console.log(error);

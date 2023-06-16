@@ -17,6 +17,31 @@ form.addEventListener('submit', function (e) {
     }
 });
 
+
+
+//MODO OSCURO
+// Obtener el botón y el cuerpo del documento
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+
+// Comprobar el modo actual almacenado en localStorage
+const currentMode = localStorage.getItem('mode');
+if (currentMode) {
+  body.classList.add(currentMode);
+}
+
+// Manejar el cambio de modo cuando se hace clic en el botón
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  body.classList.toggle('dark-mode');
+
+  // Almacenar el modo actual en localStorage
+  const mode = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+  localStorage.setItem('mode', mode);
+});
+
+
+
 //DETALLE CANCION
 // Para obtener el ID de la canción de la URL
 let cancionQS = new URLSearchParams(location.search);
