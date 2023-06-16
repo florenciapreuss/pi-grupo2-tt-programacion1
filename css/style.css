@@ -93,13 +93,13 @@ ul {
 /* funcionalidad electiva */
 /* Estilos para el modo claro */
     body.light-mode {
-    background-color: white;
+    background-color: rgb(163, 163, 163);
     color: black;
 }
 /* Estilos para el modo oscuro */
     body.dark-mode {
     background-color: black;
-    color:white;
+    color:rgb(163, 163, 163);
 }
 /* Estilos para la imagen del modo oscuro*/
 .mode-toggle{
