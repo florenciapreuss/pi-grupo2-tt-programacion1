@@ -381,6 +381,13 @@ ul {
 
 
 /*---------------GENEROS.HTML--------------------*/
+.tituloGeneros{
+    font-size: 35px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
 
 .image {
     height: 300px;
@@ -389,7 +396,28 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: row;
+    padding: 5px;
+    margin: 5px;
 }
+
+.ListaGeneros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: row;
+}
+
+.title.genero{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#generos a{
+    text-decoration: none;
+}
+
 
 /*---------------FIN GENEROS.HTML--------------------*/
 
