@@ -33,7 +33,10 @@ if(arrayplaylist.length == 0){ // Lo que le indique a este bloque fue basicament
             return respuesta.json()
         })
         .then(function(track){
-         imgplaylist.innerHTML += `<a class="links" href="detallecancion.html?id=${track.id}"><img src="${track.album.cover_xl}" alt="Album${track.album.title}">${track.title}</img></a>`
+         imgplaylist.innerHTML += `<article class="cancionesEnPlaylist">
+         <a class="links" href="detallecancion.html?id=${track.id}">
+         <img src="${track.album.cover_medium}" alt="Album${track.album.title}">${track.title}</img></a>
+         </article>`
 
         })
         .catch(function(error){

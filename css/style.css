@@ -11,6 +11,7 @@ body{
     font-size: 1.6rem ;
     font-family: 'Lato', sans-serif;
     line-height: 2rem;
+    padding: 30px;
     
 }
 
@@ -84,12 +85,21 @@ ul{
     display: flex;
 
 }
+#footer {
 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
 .integrantes{
     width: 100%;
     text-align: center;
     font-size: 100%;
     text-decoration: underline;
+
 }
 /*-------------------------FIN DE HEADER-----------------------*/
 /*---------------BOXES DE INICIO (NO TOCAR)--------------------*/
@@ -184,12 +194,32 @@ ul{
     display: flex;
     flex-direction: column;
 }
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.botonesPlaylist{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+
 /**Detalle de los albumes**/
 .detallesalbum{
     flex-direction: column;
     margin-right: 5%;
+    padding: 40px;
 }
 
+.listTracks{
+    display: flex;
+    flex-direction: column;
+}
 /* Seguimoss Playlist java script valita */
 
 .imgplaylist{
@@ -220,3 +250,6 @@ ul{
     flex-wrap: wrap;
     align-items: row;
 }
+
+
+/* MEDIA QUERIES */

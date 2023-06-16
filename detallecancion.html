@@ -9,43 +9,44 @@
 </head>
 <body>
     <header id="header">
-        <section class="sectionLogo">
-            <img id="logo" src="./img/imagenLogo.png.png" alt="Waves Logo">
-        </section>
+        <section class="encabezado">
+            <section class="sectionLogo">
+                <img id="logo" src="./img/imagenLogo.png.png" alt="Waves Logo">
+            </section>
 
+            <section class="sectionBusqueda">
+                <form class="form" id="formId" action="./resultadoBusqueda.html" method="get">
+                    <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
+                    <button class="submitButton" type="submit"> <img class="lupaBusqueda" src="./img/lupa.png"
+                            alt="Lupa de búsqueda"> </button>
+                </form>
+            </section>
+        </section>
         <section class="sectionMenuNavegacion">
             <ul>
                 <li><a class="linknav" href="./index.html">Inicio</a></li>
                 <li><a class="linknav" href="./playlist.html">Mi Playlist</a></li>
-                <li> <a class="linknav" href="#discosalbumes">Discos/Álbumes</a></li>
-                <li><a class="linknav" href="#artistas">Artistas</a></li>
-                <li><a class="linknav" href="#canciones">Canciones</a></li>
+                <li> <a class="linknav" href="./playlist.html">Discos/Álbumes</a></li>
+                <li><a class="linknav" href="./playlist.html">Artistas</a></li>
+                <li><a class="linknav" href="./playlist.html">Canciones</a></li>
                 <li><a class="linknav" href="./generos.html">Géneros</a></li>
             </ul>
         </section>
 
-        <section class="sectionBusqueda">
-            <form class="form" id="formId" action="./resultadoBusqueda.html" method="get">
-                <input class="busqueda" type="search" name="busqueda" placeholder="Búsqueda">
-                <button class="submitButton" type="submit"> <img class="lupaBusqueda" src="./img/lupa.png" alt="Lupa de búsqueda"> </button>
-            </form>
-        </section>
     </header>
 
     <section>
-        <article>
-            <a class="links" id="agregarQuitar" href="#">Agregar a mi playlist</a>
-        </article>
-        <article>
-            <a class="links" href="playlist.html">Ir a mi playlist</a>
+        <article class="botonesPlaylist">
+            <button class="links" id="agregarQuitar" href="#"> Agregar a mi playlist</button>
+            <button class="links button" onclick="window.location.href='playlist.html'">Ir a mi playlist</button>
         </article>
     </section>
    
    
    <article class="detalle detCancion">
-        <h1 class="cancionTitle detCancion"></h1>
-        <h2 class="artist detCancion"></h2>
-        <h3 class="album detCancion"></h3>
+        <h1 class="cancionTitle"></h1>
+        <h2 class="artist"></h2>
+        <h3 class="album">Album: </h3>
         <img src="" alt="" class="image detCancion">
         <audio controls src="" class="audio detCancion"></audio>
     </article>

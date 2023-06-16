@@ -38,7 +38,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${cancio
 
         cancionTitle.innerText = data.title;
         artist.innerText       = data.artist.name;
-        album.innerText        = data.album.title;
+        album.innerText        += data.album.title;
         image.src              = data.album.cover_medium;
         image.alt              = data.album.title;
         audio.src              = data.preview;
