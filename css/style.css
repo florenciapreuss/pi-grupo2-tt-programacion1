@@ -543,7 +543,37 @@ body.dark-mode {
     text-align: center;
     font-size: 100%;
     text-decoration: underline;
-
 }
-
 /*---------------FOOTER--------------------*/
+
+
+
+/*---------------MEDIA QUERIES--------------------*/
+@media (max-width: 480px) {
+    #logo {
+      width: 80px;
+    }
+  
+    .busqueda {
+      width: 300px;
+    }
+    .mode-toggle{
+        display: none;
+    }
+    .linknav {
+      height: 40px;
+      width: 120px;
+      font-size: 12px;
+    }
+
+    .encabezado{
+        width: 30%;
+    }
+
+    .sectionMenuNavegacion ul{
+        width: 30%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+  /*---------------FIN MEDIA QUERIES--------------------*/
