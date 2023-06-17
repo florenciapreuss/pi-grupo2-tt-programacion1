@@ -11,7 +11,11 @@ html {
 body {
     background-color: rgb(163, 163, 163);
     font-family: 'Lato', sans-serif;
-    padding: 30px;
+    margin: 0;
+    border: 0;
+    padding: 3%;
+    width: 100%;
+    font-size: 1rem;
 }
 
 
@@ -31,31 +35,6 @@ header {
     justify-content: center;
     width: 30%;
 }
-
-.linknav {
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
-    display: block;
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    align-items: center;
-    padding: 14px;
-    font-family: 'Open Sans', sans-serif;
-    border: solid 3px #474B4E;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .busqueda {
     margin: 20px;
     height: 50px;
@@ -91,6 +70,31 @@ ul {
     padding-bottom: 20px;
 }
 
+.linknav {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    display: block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    padding: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: solid 3px #474B4E;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* funcionalidad electiva */
 /* Estilos para el modo claro */
     body.light-mode {
@@ -108,6 +112,7 @@ body.dark-mode {
 .mode-toggle {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 
 /*-------------------------FIN DE HEADER-----------------------*/
@@ -415,6 +420,58 @@ body.dark-mode {
 /*---------------FIN GENEROS.HTML--------------------*/
 
 
+/*---------------DETALLEGENEROS.HTML--------------------*/
+
+#detalleGeneros {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .titleDetGenero {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .subtituloDetGenero{
+    font-size: 22px;
+  }
+  .imageDetGenero {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .listaArtistasDetGeneros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .listaArtistasDetGeneros article {
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .nombreArtistaDetGenero {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .imagenDetGenero {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+  }
+  
+  .imagenDetGenero:hover {
+    transform: scale(1.1); 
+  }
+  
+
+/*---------------FIN DETALLEGENEROS.HTML--------------------*/
+
+
 /*---------------PLAYLISTS.HTML--------------------*/
 .tplaylist {
     font-size: 35px;
@@ -490,5 +547,3 @@ body.dark-mode {
 }
 
 /*---------------FOOTER--------------------*/
-
-/*---------------MEDIA QUERIES--------------------*/
