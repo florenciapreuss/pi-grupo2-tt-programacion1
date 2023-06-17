@@ -576,4 +576,15 @@ body.dark-mode {
         flex-wrap: wrap;
     }
   }
+
+  .listAlbumsArtista{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image{
+    width: 100px;
+    height: 100px;
+  }
   /*---------------FIN MEDIA QUERIES--------------------*/
